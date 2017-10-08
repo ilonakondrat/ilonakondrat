@@ -1,0 +1,88 @@
+body {
+    background: #ffffff;
+    margin: 0px;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.header {
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0 15px;
+}
+
+.logo-header {
+    float: left;
+}
+
+.divmenu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    float: right;
+
+}
+
+.menu li {
+    display: inline;
+    padding: 0 30px;
+}
+
+
+.menu a {
+
+    font: Ubuntu, sans-serif;
+    text-decoration: none;
+}
+
+
+.menu a {
+    display: inline;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px 15px;
+    border-radius: 0;
+    text-decoration: none;
+    color: #000000;
+    font: Ubuntu, sans-serif, 30px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.menu a:hover {
+    text-decoration: line-through;
+    text-decoration-color: white;
+
+}
+
+.widokilogo {
+    width: 200px;
+    height: auto;
+}
+
+.back {
+    width: 100%;
+    height: 700px;
+    padding-top: 30px;
+
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.socials img {
+    width: 50px;
+    padding: 20px;
+}
