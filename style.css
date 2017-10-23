@@ -1,184 +1,160 @@
 body {
-    background: #ffffff;
-    margin: 0px;
-    height: 100%;
-    font-family: "Ubuntu", sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-}
+  background: #ffffff;
+  margin: 0px;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  font-size: 20px; }
+
 .header {
-    max-width: 1170px;
-    margin: 0px auto;
-    padding: 0 15px;
-}
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0 15px; }
 
 .logo-header {
-    float: left;
-}
+  float: left; }
 
 .menu-container {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px;
-    padding: 15px;
-    text-align: right;
-    float: right;
-
-}
-
-.menu li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 15px;
+  text-align: right;
+  float: right; }
+  .menu-container .menu li {
     display: inline;
-    padding: 0 30px;
-}
-
-.menu a {
+    padding: 0 30px; }
+  .menu-container .menu a {
     display: inline;
     text-align: center;
     padding: 10px;
     margin: 10px 15px;
     text-decoration: none;
     color: #000000;
-    font: Ubuntu, sans-serif, 30px;
+    font: #000000, 1.5rem;
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
-    transition: background-color 1s;
-}
-
-.menu a:hover {
+    transition: background-color 1s; }
+  .menu-container .menu a:hover {
     text-decoration: line-through;
-    text-decoration-color: #000000;
-
-}
+    text-decoration-color: #000000; }
 
 .widoki-logo {
-    width: 200px;
-    height: auto;
-}
+  width: 10%;
+  height: auto; }
 
-.hero-header{
-    background-image: url("img/artvin-2722399_1920.jpg");
-    width: 100%;
-    height: 750px;
-    z-index: 1;
-}
-
+.hero-header {
+  background-image: url("img/artvin-2722399_1920.jpg");
+  width: 100%;
+  height: 750px;
+  z-index: 1; }
 
 .hero-header div {
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;
-    padding: 300px 200px;
-    white-space: nowrap;
-}
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 300px 200px;
+  white-space: nowrap; }
 
 .btn-hero-header {
-    display: inline-block;
-    border-radius: 4px;
-    border: solid 1px white;
-    background-color: transparent;
-    color: #ffffff;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    vertical-align: middle;
-}
+  border-radius: 4px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+  width: 15%;
+  margin: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s; }
 
 .btn-hero-header span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s; }
 
 .btn-hero-header span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
 
 .btn-hero-header:hover span {
-    padding-right: 25px;
-}
+  padding-right: 25px; }
 
 .btn-hero-header:hover span:after {
-    opacity: 1;
-    right: 0;
-}
+  opacity: 1;
+  right: 0; }
 
 .footer-socials {
-    display: flex;
-    justify-content: center;
-}
+  display: flex;
+  justify-content: center; }
 
 .footer-socials img {
-    width: 50px;
-    padding: 20px;
-}
+  width: 50px;
+  padding: 20px; }
 
 .news .email {
-    font-size: 8px;
-    margin: 0;
-}
-.newsletterbox{
-    display: flex;
-    justify-content: center;
-}
+  font-size: 0.4rem;
+  margin: 0; }
+
+.newsletterbox {
+  display: flex;
+  justify-content: center; }
 
 #form-field {
-    width: 300px;
-    height: 29px;
-}
+  width: 300px;
+  height: 29px; }
 
 .mail {
-    margin: 0;
-    padding: 0px 10px 0px 0px;
-}
-.btn-send{
-    display: inline-block;
-    border-radius: 0;
-    background-color: #000000;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 0px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 0 0 0 0;
-    width: 100px;
-}
+  margin: 0;
+  padding: 0px 10px 0px 0px; }
+
+.btn-send {
+  border-radius: 0;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0 0 0 0;
+  width: 100px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s; }
 
 .btn-send span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s; }
 
 .btn-send span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
 
 .btn-send:hover span {
-    padding-right: 25px;
-}
+  padding-right: 25px; }
 
 .btn-send:hover span:after {
-    opacity: 1;
-    right: 0;
-}
+  opacity: 1;
+  right: 0; }
+
 footer {
-    margin: 0px;
-}
+  margin: 0px; }
+
+/*# sourceMappingURL=style.csss.map/

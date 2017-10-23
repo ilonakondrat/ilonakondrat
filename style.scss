@@ -1,0 +1,191 @@
+$standard-background-color: #ffffff;
+$standard-font: "Ubuntu", sans-serif;
+$standard-font-size: 20px;
+$standard-font-color: #000000;
+
+@mixin transition (){
+-webkit-transition: background-color 1s;
+-moz-transition: background-color 1s;
+transition: background-color 1s;}
+
+@mixin flex () {
+  display: flex;
+  justify-content: center;
+}
+@mixin btn-transition () {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: all 0.5s;}
+
+@mixin btn-span (){
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+body {
+  background: $standard-background-color ;
+  margin: 0px;
+  height: 100%;
+  font-family: $standard-font;
+  text-decoration: none;
+  font-size: $standard-font-size;
+}
+.header {
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+.logo-header {
+  float: left;
+}
+
+.menu-container {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px;
+  padding: 15px;
+  text-align: right;
+  float: right;
+
+  .menu li {
+    display: inline;
+    padding: 0 30px;
+  }
+  .menu a {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 15px;
+    text-decoration: none;
+    color: $standard-font-color;
+    font: $standard-font-color, 1.5rem;
+    @include transition
+  }
+
+  .menu a:hover {
+    text-decoration: line-through;
+    text-decoration-color: $standard-font-color;
+
+  }
+}
+
+
+.widoki-logo {
+  width: 10%;
+  height: auto;
+}
+
+.hero-header{
+  background-image: url("img/artvin-2722399_1920.jpg");
+  width: 100%;
+  height: 750px;
+  z-index: 1;
+}
+
+
+.hero-header div {
+  color: $standard-background-color;
+  font-family: $standard-font;
+  font-size: 2rem;
+  text-align: center;
+  padding: 300px 200px;
+  white-space: nowrap;
+}
+
+.btn-hero-header {
+  border-radius: 4px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: $standard-background-color;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+  width: 15%;
+  margin: 5px;
+  vertical-align: middle;
+  @include btn-transition ();
+}
+
+.btn-hero-header span {
+  @include btn-transition ();
+}
+
+.btn-hero-header span:after {
+  @include btn-span();
+}
+
+.btn-hero-header:hover span {
+  padding-right: 25px;
+}
+
+.btn-hero-header:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer-socials {
+  @include flex;
+}
+
+.footer-socials img {
+  width: 50px;
+  padding: 20px;
+}
+
+.news .email {
+  font-size: 0.4rem;
+  margin: 0;
+}
+.newsletterbox{
+@include flex;
+}
+
+#form-field {
+  width: 300px;
+  height: 29px;
+}
+
+.mail {
+  margin: 0;
+  padding: 0px 10px 0px 0px;
+}
+.btn-send{
+
+  border-radius: 0;
+  background-color: $standard-font-color;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0 0 0 0;
+  width: 100px;
+ @include btn-transition ();
+
+}
+
+.btn-send span {
+  @include btn-transition ();
+}
+
+.btn-send span:after {
+ @include btn-span ();
+
+}
+.btn-send:hover span {
+  padding-right: 25px;
+}
+.btn-send:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  margin: 0px;
+}
