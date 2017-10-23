@@ -6,9 +6,6 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
-
-
-
 .header {
     max-width: 1170px;
     margin: 0px auto;
@@ -34,14 +31,6 @@ body {
     padding: 0 30px;
 }
 
-
-.menu a {
-
-    font: Ubuntu, sans-serif;
-    text-decoration: none;
-}
-
-
 .menu a {
     display: inline;
     text-align: center;
@@ -66,7 +55,7 @@ body {
     height: auto;
 }
 
-.center{
+.hero-header{
     background-image: url("img/artvin-2722399_1920.jpg");
     width: 100%;
     height: 750px;
@@ -76,14 +65,13 @@ body {
 
 .text {
     color: #ffffff;
-    font-family: Ubuntu, sans-serif;
     font-size: 30px;
     text-align: center;
     padding: 300px 200px;
     white-space: nowrap;
 }
 
-button {
+.btn-hero-header {
     display: inline-block;
     border-radius: 4px;
     border: solid 1px white;
@@ -96,16 +84,17 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    vertical-align: middle;
 }
 
-.button span {
+.btn-hero-header span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.button span:after {
+.btn-hero-header span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -114,22 +103,15 @@ button {
     transition: 0.5s;
 }
 
-.button:hover span {
+.btn-hero-header:hover span {
     padding-right: 25px;
 }
 
-.button:hover span:after {
+.btn-hero-header:hover span:after {
     opacity: 1;
     right: 0;
 }
 
-
-/*.back {
-    width: 100%;
-    height: 700px;
-
-}
-*/
 .footer-socials {
     display: flex;
     justify-content: center;
@@ -141,7 +123,7 @@ button {
 }
 
 .news .email {
-    font: 8px Ubuntu;
+    font-size: 8px;
     margin: 0;
 }
 .newsletterbox{
@@ -149,7 +131,7 @@ button {
     justify-content: center;
 }
 
-#pole {
+#form-field {
     width: 300px;
     height: 29px;
 }
@@ -158,7 +140,7 @@ button {
     margin: 0;
     padding: 0px 10px 0px 0px;
 }
-.button2 {
+.btn-send{
     display: inline-block;
     border-radius: 0;
     background-color: #000000;
@@ -173,14 +155,14 @@ button {
     width: 100px;
 }
 
-.button2 span {
+.btn-send span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.button2 span:after {
+.btn-send span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -189,11 +171,11 @@ button {
     transition: 0.5s;
 }
 
-.button2:hover span {
+.btn-send:hover span {
     padding-right: 25px;
 }
 
-.button2:hover span:after {
+.btn-send:hover span:after {
     opacity: 1;
     right: 0;
 }
