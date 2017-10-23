@@ -7,24 +7,21 @@ body {
   background: #ffffff;
   margin: 0px;
   height: 100%;
-  font-family: $font-family;
-  text-decoration: $text-decoration;
-  font-size: $font-size;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
 }
-
-
-
-header {
+.header {
   max-width: 1170px;
   margin: 0px auto;
   padding: 0 15px;
 }
 
-logo-header {
+.logo-header {
   float: left;
 }
 
-divmenu {
+.menu-container {
   display: inline-block;
   list-style-type: none;
   margin: 0px;
@@ -34,35 +31,31 @@ divmenu {
 
 }
 
-menu {
+.menu li {
+  display: inline;
+  padding: 0 30px;
+}
 
-  li {
-    display: inline;
-    padding: 0 30px;
-  }
+.menu a {
+  display: inline;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 15px;
+  text-decoration: none;
+  color: #000000;
+  font: Ubuntu, sans-serif, 30px;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  transition: background-color 1s;
+}
 
-  a {
-    display: inline;
-    text-align: center;
-    padding: 10px;
-    margin: 10px 15px;
-    text-decoration: $text-decoration;
-    color: $font-color;
-    font: $font-family, 30px;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    transition: background-color 1s;
+.menu a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #000000;
 
 }
 
-  a:hover {
-    text-decoration: line-through;
-    text-decoration-color: #000000;
-
-  }
-}
-
-widokilogo {
+.widoki-logo {
   width: 200px;
   height: auto;
 }
@@ -74,22 +67,21 @@ widokilogo {
   z-index: 1;
 }
 
-text {
-  color: $font-color;
-  font-family: $font-family;
+
+.hero-header div {
+  color: #ffffff;
   font-size: 30px;
   text-align: center;
   padding: 300px 200px;
   white-space: nowrap;
 }
 
-
-button {
+.btn-hero-header {
   display: inline-block;
   border-radius: 4px;
   border: solid 1px white;
   background-color: transparent;
-  color: $font-color;
+  color: #ffffff;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -97,34 +89,102 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  vertical-align: middle;
 }
 
-  span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-
-  :hover span {
-    padding-right: 25px;
-  }
-
-  :hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
+.btn-hero-header span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
+.btn-hero-header span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.btn-hero-header:hover span {
+  padding-right: 25px;
+}
+
+.btn-hero-header:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials img {
+  width: 50px;
+  padding: 20px;
+}
+
+.news .email {
+  font-size: 8px;
+  margin: 0;
+}
+.newsletterbox{
+  display: flex;
+  justify-content: center;
+}
+
+#form-field {
+  width: 300px;
+  height: 29px;
+}
+
+.mail {
+  margin: 0;
+  padding: 0px 10px 0px 0px;
+}
+.btn-send{
+  display: inline-block;
+  border-radius: 0;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 0px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  width: 100px;
+}
+
+.btn-send span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-send span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-send:hover span {
+  padding-right: 25px;
+}
+
+.btn-send:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+footer {
+  margin: 0px;
+}
 
